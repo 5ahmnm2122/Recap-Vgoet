@@ -10,11 +10,13 @@ OS: Windows 11, Game Engine: Unity 2020.3.18f1, Visual Studio 2019,
 WebGL
 
 ### Visuals: 
-
+/
 
 ### Third party material: 
 Background: https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/01073865290819.5d61d475f0072.jpg
-Target:
+
+Target: https://1000logos.net/wp-content/uploads/2017/06/Target-emblem.png
+
 Sound: https://freesound.org/people/MATRIXXX_/sounds/458906/
 
 ### Tutorials used: 
