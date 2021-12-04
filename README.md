@@ -1,16 +1,10 @@
 # Recap-Vgoet
 
-## Finished project:
-
-
 ### Project description: 
 Shoot the targets with your mouse until you reach a score of 10.
 
 ### Development platform: 
 OS: Windows 11, Game Engine: Unity 2020.3.18f1, Visual Studio 2019,   
-
-## Software/Hardware Requirements: 
-WebGL has to be enabled/installed
 
 ### Target platform: 
 WebGL
@@ -19,15 +13,23 @@ WebGL
 
 
 ### Third party material: 
-Random Target Spawn: https://www.youtube.com/watch?v=IXDvl8aTM_M
+Background: https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/01073865290819.5d61d475f0072.jpg
+Target:
+Sound: https://freesound.org/people/MATRIXXX_/sounds/458906/
+
+### Tutorials used: 
+Random Target Spawn: 
+https://www.youtube.com/watch?v=IXDvl8aTM_M 
+https://www.youtube.com/watch?v=j6p5Nh7JvmY
+
+Score: https://www.youtube.com/watch?v=QbqnDbexrCw
 
 ### Project state: 
+100%
 
+### Problems: 
+Das Target verschwindet nicht von selbst nach einiger Zeit. 
+Der Sound kommt immer wenn man klickt.
 
-### Limitations: 
-none
-
-### Lessons Learned: 
-none
 
 Copyright by vgoet

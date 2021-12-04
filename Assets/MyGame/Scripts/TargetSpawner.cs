@@ -7,32 +7,45 @@ public class TargetSpawner : MonoBehaviour
 
  
     public GameObject[] target;
+ 
 
-    
     public void Start()
     {
-        SpawnTarget();
+       StartCoroutine(SpawnTarget());
     }
 
     
-    public void SpawnTarget()
+    public IEnumerator SpawnTarget()
     {
+   
 
         GameObject targetPosition = Instantiate(target[Random.Range(0, target.Length)]);
         targetPosition.transform.position = new Vector3(Random.Range(-7f, 7f), Random.Range(-4f, 4f), 0f);
 
+        yield return new WaitForSeconds(2);
 
-        
-        /*if (score.gameScore < 9)
+    
+
+        if (ScoreManager.scoreValue < 10)
         {
-            StartCoroutine(SpawnAfterTime());
+            StartCoroutine(SpawnTarget());
+           
         }
         else
         {
-            StopCoroutine(SpawnAfterTime());
+            StopCoroutine(SpawnTarget());
+        }
 
-
-          Instantiate(target, targetPosition, Quaternion.identity);
-        }*/
     }
+
+    void Update()
+    {
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            this.gameObject.GetComponent<AudioSource>().Play(0);
+        }
+
+    }
+
 }

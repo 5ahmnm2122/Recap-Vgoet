@@ -3,21 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Score : MonoBehaviour
+public class ScoreManager : MonoBehaviour
 {
 
     public static int scoreValue = 0;
-    Text score;
+    private Text score;
+    public GameObject won;
 
-    // Start is called before the first frame update
+   
     void Start()
     {
         score = GetComponent<Text>();
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
         score.text = "Score: " + scoreValue;
+
+        if (scoreValue == 10)
+        {
+            won.gameObject.active = true;
+        
+        }
     }
+
+    
 }

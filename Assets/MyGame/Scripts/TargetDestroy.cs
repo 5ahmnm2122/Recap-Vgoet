@@ -6,15 +6,28 @@ using UnityEngine;
 
 public class TargetDestroy : MonoBehaviour
 {
-     
-    private void OnMouseDown()
+    void Update()
+    {
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            this.gameObject.GetComponent<AudioSource>().Play(0);
+        }
+
+    }
+
+    public void OnMouseDown()
     {
        
         Destroy(this.gameObject);
         
-        Score.scoreValue +=1;
+        ScoreManager.scoreValue +=1;
 
+       
+
+     
     }
 
-    
+  
+
 }
